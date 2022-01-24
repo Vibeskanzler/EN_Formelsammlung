@@ -1,0 +1,95 @@
+\newpage
+\section{Theorie}
+\subsection{Grundlagen}
+Kriterien für Einteilung Energieversorgungsnetze:
+\begin{itemize}
+    \item Spannungsart \item Spannungshöhe \item Funktion \item Topologie
+\end{itemize}
+% - Spannungsart \qquad - Spannungshöhe\\
+% - Funktion \qquad \qquad- Topologie
+
+Arten der Netztopologien:
+\begin{itemize}
+\item Strahlennetz (z.B. Kfz-Bordnetz)
+\item Ringnetz
+\item Maschennetz
+\end{itemize}
+
+Spannungshöhe:
+\begin{itemize}
+    \item Höchstspannung $380/220 \, kV$
+    \item Hochspannung $100 \, kV$
+    \item Mittelspannung $10/20 \, kV$
+    \item Niederspannung $<1 \, kV$
+\end{itemize}
+
+\subsection{Trafos}
+\ul{Kühlungsart}\\
+O: Ölisolierung \qquad N: Natürlich durch Auftrieb\\
+A: Luft \qquad W: Wasser \qquad F: Fremd durch Lüfterpumpen
+
+Beispiel: ONAN: Ölkreislauf natürlich, Kühler (Radiatoren) mit natürlicher Kühlleistung\\
+ONAF: Ölkreislauf gepumpt, Wasserkühler mit Pumpen\\
+
+\ul{Schaltgruppen}\\
+OS: Y, YN, D \qquad US: y, yn, d, zn, a\\
+N/n: mit Sternpunktleiter\\
+zn: Zick-Zack (nur Sternpunktschaltung)\\
+a: Sparwicklung
+
+Beispiel: Dy5 $\rightarrow$ Dreieck OS, Stern US, $5\cdot 30 \degree = 150\degree$ Phasenversatz zwischen OS/US.
+
+\subsection{Freileitungen}
+\subsection{Kabel}
+
+\ul{Leiterprofile (Aufbau-Kurzzeichen)}\\
+R: Rundleiter \qquad O: Ovalleiter \qquad S: Segmentleiter\\
+H: Hohlleiter \qquad E: Eindrähtig \qquad M: Mehrdrähtig \\
+V: Verdichtet \quad $\rightarrow$ weitere Kurzzeichen: siehe F34\\
+
+% Betriebskonstanten:
+
+\begin{tabular}[h]{l|l|l|}
+    & Freileitung & Kabel\\
+    \hline
+Reaktanzbelag & groß & klein\\
+    \hline
+Kapazitätsbelag & klein & groß \\
+\hline
+Wellenwiderstand & groß & klein \\
+\hline
+Natürliche Leistung & klein & groß
+\end{tabular}
+
+\subsection{Generator}
+
+Polradspannung $U_p$: Im Stator induzierte Spannung\\
+Polradwinkel $\vartheta$: Winkel Polrad- zu Klemmenspannung
+
+\begin{tabular}[h]{|l|l|l|}
+    \hline
+    Aufbau & Stator & Rotor\\
+    \hline
+    Innenpol & Induktionsspule & Permanentmagnet\\
+    \hline
+    Außenpol & Permanentmagnet & Induktionsspule\\
+    \hline
+\end{tabular}
+
+$\Rightarrow$ Drehstrom-Synchronmaschinen als Innenpolgenerator!\\
+
+\subsubsection{Bauart des Rotors}
+\begin{itemize}
+    \item Schenkelpolrotor $\rightarrow$ Wasserkraftwerke\\
+        $100 \min^{-1}\leq n \leq 750 \min^{-1}$
+    \item Vollpolrotor (Turbogenerator) $\rightarrow$ Wärmekraftwerke\\
+        $n \leq 3000 \min^{-1}$
+\end{itemize}
+
+\subsection{Schaltgeräte}
+Löschen des Lichtbogens (LiBo):
+\begin{itemize}
+\item Verlängerung des LiBo
+\item Kühlung des LiBo
+\item Aufteilen des LiBo
+\end{itemize}
