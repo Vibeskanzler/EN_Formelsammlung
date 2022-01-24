@@ -5,13 +5,18 @@
     U_{i_{\mathit{eff}}} &= 4,44 \cdot N \cdot f \cdot B_= \cdot \hat{A}_{Fe}
 \end{align*}
 
+\textbf{mechanische Leistung}
+\begin{align*}
+    P_{mech}&=2\cdot \pi \cdot n \cdot M = \omega \cdot M
+\end{align*}
+
 \textbf{Polpaarzahl}
 \begin{align*}
     n &=\frac{f}{p}= \dfrac{3000}{p} \left[ \frac{1}{min}\right] \qquad \textnormal{für f = 50Hz}
     \end{align*}
 
 \subsection{Ersatzschaltbild (ESB)}
-Vernachlässigung von $R_S = 0$
+$R_S = 0$ \qquad WICHTIG! $U = U_{LE} = U_{LL}/\sqrt{3}$
 \begin{align*}
     \ul{I} &= I_w +jI_b \qquad I_w = I \cdot \cos(\varphi) \quad I_b = \ul{I}\cdot (\pm sin(\varphi))\\
     \ul{U}_p &= \ul{U} +jX_s \cdot \ul{I} \qquad
@@ -58,10 +63,11 @@ $    sin(\varphi) = \pm1 \Rightarrow$ Gerade
 $+ :$ induktiv \qquad $- :$kapazitiv \qquad $I_B :$ Bezugsstrom
 
 \subsection{Leistung}
-$P_{mech,zu} = P_{el,ab} \neq f(\vartheta) \rightarrow$ für $\vartheta < 90\degree$ stabil\\
+$P_{mech,zu} = P_{el,ab} = P \neq f(\vartheta) \rightarrow$ für $\vartheta < 90\degree$ stabil\\
 \begin{align*}
-    sin(\vartheta) = \frac{I_w\cdot X}{U_p} &= \frac{P\cdot X}{3\cdot U \cdot U_p}  \qquad P = 3 \cdot \frac{U\cdot U_p}{X} \cdot sin(\vartheta)\\
-    S_{Bez} = 3 \cdot \dfrac{U^2}{X} & \qquad P_{Kipp} = P_{max} = 3\cdot U \cdot \frac{U_p}{X}\\
+    sin(\vartheta) &= \frac{I_w\cdot X}{U_p} = \frac{P\cdot X}{3\cdot U \cdot U_p}  \qquad cos(\vartheta) = \frac{U+X \cdot I_b}{U_p}\\
+    P &= 3 \cdot \frac{U\cdot U_p}{X} \cdot sin(\vartheta) = P_{Kipp} \cdot sin(\vartheta)\\
+    S_{Bez} &= 3 \cdot \dfrac{U^2}{X} \qquad P_{Kipp} = P_{max} = 3\cdot \frac{U \cdot U_p}{X}\\
     \dfrac{P}{S_{Bez}} &= \left(\dfrac{U_p}{U}\right) \cdot sin(\vartheta)\\
     \dfrac{Q}{S_{Bez}} &= \left[\left(\dfrac{U_p}{U}\right) \cdot cos(\vartheta)\right] -1\\
     % P_{Kipp} &= 3 \cdot \dfrac{U \cdot U_p}{X_S}
@@ -70,7 +76,7 @@ $P_{mech,zu} = P_{el,ab} \neq f(\vartheta) \rightarrow$ für $\vartheta < 90\deg
 \subsection{Regelung}
 \begin{align*}
     \upsilon_{neu} &= sin^{-1}\left( \dfrac{P_{neu} \cdot X}{3 \cdot U \cdot U_{p,neu}}\right)\\
-    Q_{neu} &= \left( \dfrac{3 \cdot U^2}{X_s}\right) \cdot \left( \left( \dfrac{U_{p,neu}}{U} cos( \upsilon_{neu})\right)-1\right)
+    Q_{neu} &= \left( \dfrac{3 \cdot U^2}{X_s}\right) \cdot \left[ \left( \dfrac{U_{p,neu}}{U} \cdot cos( \vartheta_{neu})\right)-1\right]
 \end{align*}
 
 \textbf{Konstante Scheinleistung}\\
