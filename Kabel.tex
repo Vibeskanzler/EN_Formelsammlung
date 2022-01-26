@@ -6,12 +6,14 @@
     F_\vartheta &= 1+\alpha \cdot(\vartheta_{max} - 20\degree C)\\
     R'_b &=R'_=\cdot F_\vartheta \cdot F_S \cdot F_P
 \end{align*}
-$F_S$: Skineffekt (F35) \\
+$F_S$: Skineffekt (F35) \qquad $R'_=$: für Kabel (F34)\\
 $F_P:$ Proximity-Effekt (F37)
 
 \subsection{Reaktanzbelag}
-Metallmantel keine Schirmung! Für $D$ nicht $\gg r$!\\
-\indent $r:$ Radius des (Innen-)Leiters, nicht vom Mantel!
+% Metallmantel keine Schirmung! Für $D$ nicht $\gg r$!\\
+\indent $r:$ Radius des (Innen-)Leiters, nicht vom Mantel!\\
+\indent $D:$ Abstand zw. 2 Innenleiter (vom Mittelpunkt)\\
+\indent $D,  D_m, D_{L1L\RN{1}}, D_{L1L\RN{2}}$ wie bei Freileitung\\
 
 \textbf{Wechselstromkabel}
 \begin{equation*}
@@ -33,7 +35,6 @@ Metallmantel/-folie schirmt E-Feld ab!\\
 \indent $B'_b:$ gilt für $f=50Hz$\\
 \indent $d:$ Schirm/Mantel-Durchmesser eines Leiters\\
 \indent $R:$ Radius der Isolierung\\
-\indent $D:$ Abstand zw. 2 Innenleiter (vom Mittelpunkt)
 
 \textbf{Einleiter-/Dreimantel-/Radialfeldkabel}
 \begin{align*}
@@ -70,7 +71,7 @@ Ursache: Restleitfähigkeit der Isolierwerkstoffe\\ \indent bzw. Polarisationsve
 
 \textbf{Dielektrische Verluste}
 \begin{align*}
-    P_{Diel} &= (\tan \delta \cdot \varepsilon_{r}) \cdot \omega \cdot C_{\mathit{Vakuum}} \cdot U^2 = G'_b\cdot U^2_{LE}
+    P_{Diel} &= (\tan \delta \cdot \varepsilon_{r}) \cdot \omega \cdot C_{\mathit{Vakuum}} \cdot U^2 = G'_b\cdot U^2_{LE} \quad [\frac{W}{km}]
 \end{align*}
 \indent $\tan \delta \cdot \varepsilon_{r}$: Verlustfaktor, siehe Tabelle \textbf{F43}
 
